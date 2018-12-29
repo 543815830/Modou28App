@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/distance_12"
+        android:layout_marginRight="@dimen/distance_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/distance_13_5"
+            android:layout_marginBottom="@dimen/distance_11_5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bag_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="拼手气红包"
+                android:textColor="#252525"
+                android:textSize="@dimen/text_size_4" />
+            <ImageView
+                android:id="@+id/iv_pin"
+                android:layout_toRightOf="@+id/bag_type"
+                android:layout_marginLeft="@dimen/distance_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@mipmap/pin"/>
+            <TextView
+                android:id="@+id/tv_coins_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="剩余金额：100/600"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/text_size_4" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/distance_11_5"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_status_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="状态：领取中"
+                android:textColor="#838383"
+                android:textSize="@dimen/text_size_1" />
+            <TextView
+                android:id="@+id/tv_get_num_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="领取人数：100/600"
+                android:textColor="#bcbcbc"
+                android:textSize="@dimen/text_size_11" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/distance_11_5"
+            android:layout_height="@dimen/distance_25">
+            <TextView
+                android:id="@+id/tv_show_time"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:text="9-12"
+                android:textColor="#838383"
+                android:textSize="@dimen/text_size_3" />
+            <TextView
+                android:id="@+id/tv_share_redbag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/tv_back"
+                android:layout_marginRight="@dimen/distance_25"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:text="分享"
+                android:drawableLeft="@mipmap/share2"
+                android:drawablePadding="@dimen/distance_3"
+                android:textColor="#252525"
+                android:textSize="@dimen/text_size_11" />
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="返还"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/distance_3"
+                android:drawableLeft="@mipmap/back"
+                android:textColor="#252525"
+                android:textSize="@dimen/text_size_11" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_share_redbag2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="分享"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/distance_3"
+                android:drawableLeft="@mipmap/share2"
+                android:textColor="#252525"
+                android:textSize="@dimen/text_size_11" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

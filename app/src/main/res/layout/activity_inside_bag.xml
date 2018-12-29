@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".usercenter.activiy.InsideBagActivity">
+    <include layout="@layout/title_bar5"/>
+
+    <LinearLayout
+        android:padding="@dimen/distance_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_25"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/et_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/tv_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454545"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginLeft="@dimen/distance_20"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/string_bag_account"
+                tools:ignore="RtlHardcoded" />
+            <EditText
+                android:layout_toRightOf="@+id/tv_bag"
+                android:layout_alignRight="@+id/yuan_text"
+                android:id="@+id/bag_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_45"
+                android:background="@null"
+                android:textSize="@dimen/text_size_5"
+                android:textColor="#c3c3c3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/distance_45"
+                android:textCursorDrawable="@null"
+                android:maxLength="4"
+                android:hint="@string/_0_00"
+                tools:ignore="RtlHardcoded"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/yuan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454545"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginRight="@dimen/distance_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="金币"
+            tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_pwd"
+        android:padding="@dimen/distance_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/et_background2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/tv_ge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454545"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginLeft="@dimen/distance_20"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/string_shu"
+                tools:ignore="RtlHardcoded" />
+            <EditText
+                android:layout_toRightOf="@+id/tv_ge"
+                android:id="@+id/bag_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_45"
+                android:background="@null"
+                android:textSize="@dimen/text_size_5"
+                android:textColor="#c3c3c3"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/distance_75"
+                tools:ignore="LabelFor,RtlHardcoded,TextFields" />
+            <TextView
+                android:id="@+id/ge_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454545"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginRight="@dimen/distance_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/string_ge"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/distance_5"
+        android:layout_marginBottom="@dimen/distance_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_bag_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_1"
+            android:layout_marginRight="@dimen/distance_45"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_45"
+    android:layout_marginLeft="@dimen/distance_25"
+    android:layout_marginRight="@dimen/distance_25"
+    android:layout_marginBottom="@dimen/distance_15"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_20"
+        android:textColor="#454545"
+        android:textSize="@dimen/text_size_5"
+        android:text="@string/string_fei"
+        tools:ignore="RtlHardcoded" />
+    <TextView
+        android:id="@+id/shoucufei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_50"
+        android:textColor="@color/StatusFColor"
+        android:textSize="@dimen/text_size_5"
+        tools:ignore="RtlHardcoded" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:layout_marginBottom="@dimen/distance_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_20"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_5"
+            android:text="@string/string_xiane"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/xiane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_35"
+            android:textColor="@color/StatusFColor"
+            android:textSize="@dimen/text_size_5"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_45"
+    android:layout_marginLeft="@dimen/distance_25"
+    android:layout_marginRight="@dimen/distance_25"
+    android:layout_marginBottom="@dimen/distance_25"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_20"
+        android:textColor="#454545"
+        android:textSize="@dimen/text_size_5"
+        android:text="@string/string_deduct_money"
+        tools:ignore="RtlHardcoded" />
+    <TextView
+        android:id="@+id/total_deduct_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_50"
+        android:textColor="@color/StatusFColor"
+        android:textSize="@dimen/text_size_5"
+        android:text="@string/_0"
+        tools:ignore="RtlHardcoded" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_marginTop="@dimen/distance_25"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/login_btn_background"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/tv_fp_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:text="@string/string_send_redbag"/>
+</LinearLayout>

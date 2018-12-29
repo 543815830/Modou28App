@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context=".usercenter.activiy.InsideBankActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_user_gradient"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_48"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/back_arrow"
+                android:layout_width="@dimen/distance_48"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/distance_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/distance_18"
+                    android:src="@drawable/arrow"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_8"
+                android:textColor="@color/tv_fp_color"/>
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_117"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="@dimen/distance_117">
+            <TextView
+                android:id="@+id/user_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_10"
+                android:textSize="@dimen/text_size_30"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="4560"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_5"
+                android:textColor="#ffffff"
+                android:text="您的账户余额"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tayLayout"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="@dimen/distance_45"
+        app:tabIndicatorColor="#339ef9"
+        app:tabIndicatorHeight="@dimen/distance_1"
+        app:tabSelectedTextColor="#339ef9"
+        app:tabTextAppearance="@style/TabLayoutTextStyle1"
+        app:tabTextColor="#454545"/>
+    <view
+        android:id="@+id/gold_vp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_0"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/distance_40"
+        android:background="#f2f2f2"
+        class="com.ruixin.administrator.ruixinapplication.utils.CustomViewPager" />
+
+</LinearLayout>
+</ScrollView>

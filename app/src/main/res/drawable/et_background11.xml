@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- 圆角 -->
+
+
+    <!--文本框底色-->
+
+
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:bottom="@dimen/distance_2"
+            android:right="@dimen/distance_2"
+            android:top="@dimen/distance_2">
+            <shape>
+                <!-- 描边 -->
+                <stroke
+                    android:width="@dimen/distance2_2"
+                    android:color="@color/StatusFColor" />
+            </shape>
+        </item>
+
+    </layer-list>
+

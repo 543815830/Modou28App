@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_trustee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/distance_45">
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#454545"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_5"
+                android:text="模式"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_win_model"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#454545"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_5"
+                android:text="我的模式"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_loss_model"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#454545"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_5"
+                android:text="我的模式"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

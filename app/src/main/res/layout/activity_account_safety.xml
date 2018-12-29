@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.ruixin.administrator.ruixinapplication.usercenter.activiy.AccountSafetyActivity">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:layout_marginBottom="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/sms_version"
+            style="@style/user_rl_info">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="手机绑定"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/qq_version"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="QQ登录"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginBottom="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/update_user_pwd"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_update_pwd"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/set_pw_que"
+            style="@style/user_rl_info">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_set_pwd"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/set_pwd_card"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_set_pwdcard"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

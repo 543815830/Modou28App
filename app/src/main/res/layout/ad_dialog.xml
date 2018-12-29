@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#80000000"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/ib_fora_now"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/distance_40"
+        android:layout_marginRight="@dimen/distance_40"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="@dimen/distance_1"
+        android:background="#ffffff"
+        android:layout_height="@dimen/text_size_30"/>
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ib_close"/>
+
+</LinearLayout>

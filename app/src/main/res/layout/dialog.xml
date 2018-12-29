@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#f3f3f3"
+        android:layout_height="@dimen/distance_45">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#454545"
+            android:layout_marginLeft="@dimen/distance_25"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="请为该模式命名"
+            android:textSize="@dimen/text_size_3"/>
+    </RelativeLayout>
+<EditText
+    android:id="@+id/et_bet_mode"
+    android:layout_margin="@dimen/distance_25"
+    android:background="@drawable/et_background5"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_45" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:layout_height="@dimen/distance_45">
+      <Button
+          android:id="@+id/cancel_btn"
+          android:layout_width="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_marginRight="@dimen/distance_25"
+          android:text="取消"
+          android:background="@drawable/dispress_btn_background"
+          android:textColor="#454545"
+          android:textSize="@dimen/text_size_5"
+          android:layout_alignParentRight="true"
+          android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/commit"
+            android:layout_toLeftOf="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/distance_25"
+            android:background="@drawable/login_btn_background"
+            android:text="确定"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_5"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

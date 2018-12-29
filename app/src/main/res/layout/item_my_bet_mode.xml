@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_my_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_40">
+        <TextView
+            android:id="@+id/my_mode"
+            android:layout_marginLeft="@dimen/distance_25"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_3"
+            android:gravity="center"
+            android:text="我的模式1"
+            android:textColor="#959595"/>
+        <ImageView
+            android:layout_marginRight="@dimen/distance_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/del"/>
+    </RelativeLayout>
+
+</LinearLayout>

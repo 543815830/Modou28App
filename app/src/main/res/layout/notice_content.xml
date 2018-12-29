@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mLlContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="@dimen/distance_0"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/distance_30"
+            android:layout_height="@dimen/distance_30"
+            android:src="@drawable/tongzhi_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/distance_0"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+          <TextView
+                android:id="@+id/unread"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/distance_6"
+                android:layout_height="@dimen/distance_6"
+                android:background="@drawable/et_background17"
+
+                android:gravity="center"
+                android:textColor="#ffffff"
+                tools:ignore="RtlHardcoded,SmallSp" />
+            <TextView
+                android:layout_toRightOf="@+id/unread"
+                android:id="@+id/tv_addresser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_6"
+                android:layout_centerVertical="true"
+                android:textColor="#000000"
+                android:text="标题1"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:id="@+id/tv_notice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/distance_25"
+                android:textSize="@dimen/text_size_2"
+                android:lineSpacingExtra="@dimen/distance_9"
+                android:layout_centerVertical="true"
+                android:textColor="#959595"
+                android:text="刚刚"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_notice_content"
+            android:layout_marginTop="@dimen/distance_6"
+            android:layout_marginRight="@dimen/distance_45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_3"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="你都会死isIDis迪欧少的几率大家哦金豆豆谁说的"
+            android:textColor="#b6b6b6" />
+    </LinearLayout>
+</LinearLayout>

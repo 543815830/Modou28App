@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_50"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25">
+        <LinearLayout
+            android:id="@+id/ll_set_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:orientation="horizontal"
+            android:background="@drawable/et_background">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/pwd_que"
+                android:layout_width="@dimen/distance_0"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_20"
+                android:background="@null"
+                android:textSize="@dimen/text_size_5"
+                android:textColor="#454545"
+                android:hint="@string/string_select_que"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/iv_down_arrow"
+                android:layout_marginRight="@dimen/distance_15"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/distance_15"
+                android:layout_height="@dimen/distance_15"
+                android:src="@drawable/down_arrow"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background2">
+                <EditText
+                    android:id="@+id/pwd_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_45"
+                    android:layout_marginLeft="@dimen/distance_20"
+                    android:background="@null"
+                    android:textSize="@dimen/text_size_5"
+                    android:textColor="#454545"
+                    android:hint="@string/string_set_answer"
+                    tools:ignore="RtlHardcoded,TextFields" />
+            </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/save"
+        android:layout_marginTop="@dimen/distance_25"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/login_btn_background"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/tv_fp_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:text="@string/string_save"/>
+
+</LinearLayout>
+

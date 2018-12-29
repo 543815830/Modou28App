@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ff0000"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/regbg"
+    tools:context="com.ruixin.administrator.ruixinapplication.usercenter.activiy.RedbagActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl_update_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:background="#ff0000"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/back_arrow"
+            android:layout_width="@dimen/distance_48"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/distance_18"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/distance_18"
+                android:src="@drawable/arrow"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_8"
+            android:text="幸运红包"
+            android:textColor="@color/tv_fp_color"/>
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/user_head"
+        android:layout_width="@dimen/distance_76"
+        android:layout_height="@dimen/distance_76"
+        android:src="@drawable/iv_user"/>
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="#ffffff"
+        android:layout_marginTop="@dimen/distance_6"
+        android:textStyle="bold"
+        android:text="用户01"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@mipmap/regbg2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/distance_45"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_user_sendpoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffec7f"
+            android:textSize="@dimen/text_size_7"
+            android:text="10000"
+            android:layout_marginRight="@dimen/distance_10"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/coins"/>
+        </LinearLayout>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_marginLeft="@dimen/distance_35"
+       android:layout_marginRight="@dimen/distance_35"
+       android:background="@drawable/et_background36"
+       android:layout_height="@dimen/distance_330">
+<ListView
+    android:id="@+id/lv_red_bag"
+    android:paddingLeft="@dimen/distance_8"
+    android:paddingRight="@dimen/distance_8"
+    android:layout_width="match_parent"
+    android:divider="@drawable/line"
+    android:dividerHeight="@dimen/distance_3"
+    android:layerType="software"
+    android:layout_height="match_parent">
+
+</ListView>
+
+   </LinearLayout>
+</LinearLayout>
+    </ScrollView>

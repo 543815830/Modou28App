@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".usercenter.activiy.SetPwdCardActivity">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/distance_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/tv_pwdcard_notice"
+            android:text="@string/string_safe_set"/>
+        <TextView
+            style="@style/tv_pwdcard_notice"
+            android:textColor="@android:color/holo_red_light"
+            android:text="@string/_1"/>
+        <TextView
+            style="@style/tv_pwdcard_notice"
+            android:text="@string/_2"/>
+        <TextView
+            style="@style/tv_pwdcard_notice"
+            android:text="@string/_3"/>
+        <TextView
+            style="@style/tv_pwdcard_notice"
+            android:text="@string/_4"/>
+        <Button
+            android:id="@+id/bind_pwdcard"
+            android:layout_marginTop="@dimen/distance_20"
+            android:background="@drawable/button_selector"
+            android:textSize="@dimen/text_size_6"
+            android:textColor="@color/tv_fp_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:text="@string/string_bind_card"/>
+        <Button
+            android:id="@+id/query_pwdcard"
+            android:layout_marginTop="@dimen/distance_15"
+            android:background="@drawable/login_btn_background"
+            android:textSize="@dimen/text_size_6"
+            android:textColor="@color/tv_fp_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:text="@string/string_query_card"/>
+        <Button
+            android:id="@+id/unbind_pwdcard"
+            android:layout_marginTop="@dimen/distance_15"
+            android:layout_marginBottom="@dimen/distance_25"
+            android:background="@drawable/login_btn_background"
+            android:textSize="@dimen/text_size_6"
+            android:textColor="@color/tv_fp_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:text="@string/string_unbind_card"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

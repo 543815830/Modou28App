@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/distance_12_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_10"
+        android:layout_marginRight="@dimen/distance_10"
+        android:orientation="vertical"
+        android:background="@drawable/et_background6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/stroke_bottom_d0"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_12"
+                android:layout_marginTop="@dimen/distance_7_5"
+                android:layout_marginBottom="@dimen/distance_12"
+              android:layout_alignParentLeft="true"
+                android:textColor="#3f3f3f"
+                android:textSize="@dimen/text_size_3"
+                android:text="提现"
+                android:drawableLeft="@mipmap/tixianjilu_tixian"
+                android:drawablePadding="@dimen/distance_10"/>
+            <TextView
+                android:id="@+id/tv_fetch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_marginTop="@dimen/distance_7_5"
+                android:layout_marginBottom="@dimen/distance_12"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/text_size_3"
+                android:text="+5000" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/distance_10"
+            android:layout_marginBottom="@dimen/distance_15"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_12"
+              android:layout_alignParentLeft="true"
+                android:textColor="#3f3f3f"
+                android:textSize="@dimen/text_size_4"
+                android:text="用户姓名"
+                android:drawableLeft="@mipmap/tixianjilu_xinming"
+                android:drawablePadding="@dimen/distance_10"/>
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_alignParentRight="true"
+                android:textColor="#b7b7b7"
+                android:textSize="@dimen/text_size_4"
+                android:text="+5000" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_12"
+              android:layout_alignParentLeft="true"
+                android:textColor="#3f3f3f"
+                android:textSize="@dimen/text_size_4"
+                android:text="提现账户"
+                android:drawableLeft="@mipmap/tixianjilu_tixianzhanghu"
+                android:drawablePadding="@dimen/distance_10"/>
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_alignParentRight="true"
+                android:textColor="#b7b7b7"
+                android:textSize="@dimen/text_size_4"
+                android:text="45626677667766776667" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_account_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_alignParentRight="true"
+                android:textColor="#b7b7b7"
+                android:textSize="@dimen/text_size_4"
+                android:text="中国建设银行" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/distance_10"
+            android:layout_marginBottom="@dimen/distance_15"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_12"
+                android:layout_alignParentLeft="true"
+                android:textColor="#3f3f3f"
+                android:textSize="@dimen/text_size_4"
+                android:text="申请提现时间"
+                android:drawableLeft="@mipmap/tixianjilu_shijian"
+                android:drawablePadding="@dimen/distance_10"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_alignParentRight="true"
+                android:textColor="#b7b7b7"
+                android:textSize="@dimen/text_size_4"
+                android:text="+5000" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/distance_10"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_12"
+                android:layout_alignParentLeft="true"
+                android:textColor="#3f3f3f"
+                android:textSize="@dimen/text_size_4"
+                android:text="状态"
+                android:drawableLeft="@mipmap/tixianjilu_zhuangtai"
+                android:drawablePadding="@dimen/distance_10"/>
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/text_size_4"
+                android:text="待审核" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

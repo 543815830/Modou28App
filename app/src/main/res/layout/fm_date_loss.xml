@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/distance_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="@dimen/distance_10"
+            android:layout_marginTop="@dimen/distance_20"
+            android:paddingLeft="@dimen/distance_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_background11"
+            android:textSize="@dimen/text_size_6"
+            android:textColor="#454545"
+            android:text="@string/string_day_loss_fanli" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/distance_30"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="@dimen/distance_0"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/day_loss_fanli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/StatusFColor"
+                    android:textSize="@dimen/text_size_30"
+                    android:layout_marginBottom="@dimen/distance_15"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/text_size_5"
+                    android:text="@string/string_canget_fanlicoin" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/commit1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_selector5"
+            android:textSize="@dimen/text_size_6"
+            android:layout_marginTop="@dimen/distance_43"
+            android:layout_marginBottom="@dimen/distance_40"
+            android:textColor="@color/tv_fp_color"
+            android:layout_width="@dimen/distance_175"
+            android:layout_height="@dimen/distance_45"
+            android:text="@string/string_commit_get"/>
+        <TextView
+            android:id="@+id/day_fanli_lilv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_1"
+            android:layout_marginLeft="@dimen/distance_15"
+            android:layout_marginBottom="@dimen/distance_9"
+            android:lineSpacingExtra="@dimen/distance_9"
+            android:textColor="@color/StatusFColor"
+            android:text="        注：魔豆28全新推出新的工资系统，您可以在此领取您昨日亏损的2.0000%的返利。请及时领取，逾期将无法领取。" />
+
+    </LinearLayout>
+
+</LinearLayout>

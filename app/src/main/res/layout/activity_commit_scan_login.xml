@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruixin.administrator.ruixinapplication.usercenter.activiy.CommitScanLoginActivity">
+    <include  layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#f1f1f1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/distance_150"
+            android:layout_height="@dimen/distance_125"
+            android:layout_marginTop="@dimen/distance_72_5"
+            android:layout_marginBottom="@dimen/distance_32_5"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/saoyisao"/>
+        <TextView
+            android:id="@+id/tv_login_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_25"
+            android:layout_marginRight="@dimen/distance_25"
+            android:textSize="@dimen/text_size_5"
+            android:lineSpacingExtra="@dimen/distance_8"
+            android:textColor="#717171"
+            android:layout_marginBottom="@dimen/distance_140"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="您的账号于10月16日5时3分申请在windows登录，登录地点惠州市"/>
+        <Button
+            android:id="@+id/scan_login"
+            android:layout_marginBottom="@dimen/distance_25"
+            android:layout_marginLeft="@dimen/distance_25"
+            android:layout_marginRight="@dimen/distance_25"
+            android:background="@drawable/login_btn_background"
+            android:textSize="@dimen/text_size_6"
+            android:textColor="@color/tv_fp_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:text="确认登录"/>
+        <TextView
+            android:id="@+id/tv_cancel_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#959595"
+            android:text="取消登录"
+            android:textSize="@dimen/text_size_5"/>
+
+    </LinearLayout>
+
+</LinearLayout>

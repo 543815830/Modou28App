@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/errorStateRelativeLayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/distance_16"
+            android:layout_marginRight="@dimen/distance_16"
+            android:layout_marginTop="@dimen/distance_20"
+            android:textSize="@dimen/text_size_5"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/errorStateContentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_16"
+            android:layout_marginLeft="@dimen/distance_56"
+            android:layout_marginRight="@dimen/distance_56"
+            android:layout_marginTop="@dimen/distance_10"
+            android:gravity="center"
+            android:text="没有数据请重试"
+            android:lineSpacingExtra="@dimen/distance_5_5"
+
+            />
+
+        <Button
+            android:id="@+id/id_btn_retry"
+            android:text="重新加载"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

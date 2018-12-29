@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_person_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+   <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:id="@+id/ll_user_info"
+        android:layout_below="@id/rl_title_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="#ffffff">
+        <LinearLayout
+            android:id="@+id/ll_up_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+      <ImageView
+          android:id="@+id/iv_up_head"
+       android:layout_width="@dimen/distance_70"
+       android:layout_height="@dimen/distance_70"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/distance_27"
+          android:layout_marginBottom="@dimen/distance_19"
+          android:src="@drawable/iv_user"
+          tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/up_tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_3"
+            android:textColor="#339ef9"
+            android:text="@string/string_up_head"/>
+        </LinearLayout>
+        <RelativeLayout
+            style="@style/update_info_rl">
+            <TextView
+                android:id="@+id/tv_user_id"
+               style="@style/update_info_id"
+                android:text="@string/string_id_hao" />
+            <TextView
+                android:id="@+id/et_user_id"
+                android:layout_toRightOf="@+id/tv_user_id"
+                style="@style/update_info_bean"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+        <RelativeLayout
+           style="@style/update_info_rl">
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/update_info_id"
+                android:text="@string/string_nickname" />
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_toRightOf="@+id/tv_user_name"
+                style="@style/update_info_bean"
+                android:hint="@string/string_nickname_input"
+                tools:ignore="RtlHardcoded"
+                android:inputType="" />
+
+            <TextView
+              style="@style/update_info_wearning"
+                android:text="@string/string_kefu"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/update_info_rl">
+            <TextView
+                android:id="@+id/tv_user_qq"
+                style="@style/update_info_id"
+                android:text="@string/string_qq"
+                />
+            <EditText
+                android:id="@+id/et_user_qq"
+                android:layout_toRightOf="@+id/tv_user_qq"
+                style="@style/update_info_bean"
+                android:hint="@string/string_qq_input"
+                tools:ignore="RtlHardcoded,TextFields" />
+            <TextView
+                style="@style/update_info_wearning"
+                android:text="@string/string_do_not"/>
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/update_info_rl">
+            <TextView
+                android:id="@+id/tv_user_alipy"
+                style="@style/update_info_id"
+                android:text="@string/string_alipay" />
+            <EditText
+                android:layout_toRightOf="@+id/tv_user_alipy"
+                android:id="@+id/et_user_alipy"
+                style="@style/update_info_bean"
+                android:hint="@string/string_alipay_input"
+                tools:ignore="RtlHardcoded,TextFields" />
+            <TextView
+                style="@style/update_info_wearning"
+                android:text="@string/string_do_not"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/ll_user_info"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_16"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25">
+        <RelativeLayout
+            android:id="@+id/rl_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:background="@drawable/et_background">
+            <TextView
+                android:id="@+id/tv_user_sex"
+               style="@style/update_info_id"
+                android:layout_marginLeft="@dimen/distance_20"
+                android:textColor="#454545"
+                android:text="@string/_sex"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:layout_toRightOf="@+id/tv_user_sex"
+                android:id="@+id/et_user_sex"
+                style="@style/update_info_bean"
+                android:text="@string/_f"
+                tools:ignore="RtlHardcoded" />
+            <ImageView
+                android:id="@+id/iv_down_arrow"
+                style="@style/update_info_wearning"
+                android:layout_marginRight="@dimen/distance_10"
+                android:src="@drawable/down_arrow"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:orientation="horizontal"
+            android:background="@drawable/et_background2">
+            <TextView
+                android:id="@+id/tv_user_birthday"
+                style="@style/update_info_id"
+                android:layout_marginLeft="@dimen/distance_20"
+                android:textColor="#454545"
+                android:text="@string/_birthday"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:layout_toRightOf="@+id/tv_user_birthday"
+                android:id="@+id/et_user_birthday"
+                style="@style/update_info_bean"
+                android:text="@string/_1991_10_2"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="@dimen/distance_117">
+    <Button
+        android:id="@+id/save"
+        android:layout_marginTop="@dimen/distance_25"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/login_btn_background"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:text="@string/string_save"/>
+    </LinearLayout>
+</RelativeLayout>

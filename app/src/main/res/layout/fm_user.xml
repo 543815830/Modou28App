@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_user_gradient"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_user_fm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_user_gradient"
+        android:layout_marginBottom="@dimen/distance_10">
+
+      <!--  <com.ruixin.administrator.ruixinapplication.utils.WaterRippleView
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />-->
+    <RelativeLayout
+        android:id="@+id/rl_user_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_id_text"
+            style="@style/user_tv_id"
+            android:layout_marginLeft="@dimen/distance_13"
+            android:layout_alignParentLeft="true"
+            android:text="@string/string_id"
+            android:layout_marginStart="@dimen/distance_13"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_toRightOf="@id/tv_id_text"
+            android:id="@+id/user_tv_id"
+            style="@style/user_tv_id"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/user_tv_state"
+            style="@style/user_tv_id"
+            android:layout_marginRight="@dimen/distance_13"
+            android:layout_alignParentRight="true"
+            android:text="@string/string_user_state"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_user_head"
+            android:layout_below="@+id/rl_user_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:id="@+id/user_head"
+                android:layout_width="@dimen/distance_76"
+                android:layout_height="@dimen/distance_76"
+                android:src="@drawable/iv_user"
+                android:layout_marginBottom="@dimen/distance_13"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_18"
+                android:textSize="@dimen/text_size_8"
+                android:textColor="#ffffff"
+                android:text="@string/string_unlogin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/ll_user_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+            <LinearLayout
+                style="@style/user_tab_tv">
+                <TextView
+                    android:id="@+id/user_balance"
+                   style="@style/user_total_tv"
+                    android:text="@string/string_symbol_coin"/>
+                <TextView
+                   style="@style/user_total"
+                    android:text="@string/string_account_balance"/>
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/distance_1"
+                android:layout_gravity="center"
+                android:background="#d1d1d1"
+                android:layout_height="@dimen/distance_25"/>
+            <LinearLayout
+                style="@style/user_tab_tv"
+                >
+                <TextView
+                    android:id="@+id/user_coin"
+                    style="@style/user_total_tv"
+                    android:text="@string/string_coin"/>
+                <TextView
+                    style="@style/user_total"
+                    android:text="@string/string_bank_coin"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/distance_1"
+                android:layout_gravity="center"
+                android:background="#d1d1d1"
+                android:layout_height="@dimen/distance_25"/>
+            <LinearLayout
+                style="@style/user_tab_tv">
+                <TextView
+                    android:id="@+id/user_total"
+                    style="@style/user_total_tv"
+                    android:text="@string/string_total"/>
+                <TextView
+                    style="@style/user_total"
+                    android:text="@string/string_my_total"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/distance_1"
+                android:layout_gravity="center"
+                android:background="#d1d1d1"
+                android:layout_height="@dimen/distance_25"/>
+            <LinearLayout
+                style="@style/user_tab_tv">
+                <TextView
+                    android:id="@+id/user_suffer"
+                    style="@style/user_total_tv"
+                    android:text="@string/string_exp"/>
+                <TextView
+                    style="@style/user_total"
+                    android:text="@string/string_my_exp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rg_fm_user"
+        android:padding="@dimen/distance_5"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_75"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/rb_scan_code"
+            android:drawableTop="@mipmap/sancode"
+            android:text="扫一扫"
+            style="@style/user_tab_li_style"/>
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/rb_smash_eggs"
+            android:text="@string/string_smash_egg"
+            android:drawableTop="@mipmap/userli2"
+            style="@style/user_tab_li_style"/>
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/rb_inside_bank"
+            android:text="@string/string_inside_bank"
+            android:drawableTop="@mipmap/userli3"
+            style="@style/user_tab_li_style"/>
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/rb_online_pay"
+            android:text="@string/string_online_payment"
+            android:drawableTop="@mipmap/userli4"
+            style="@style/user_tab_li_style"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/user_info"
+            style="@style/user_rl">
+          <ImageView
+              android:id="@+id/iv_geren"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:src="@mipmap/gerenxinxi"/>
+            <TextView
+                android:layout_toRightOf="@+id/iv_geren"
+                style="@style/user_rl_tv"
+                android:text="个人信息" />
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription"
+                android:id="@+id/imageView" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_account_safety"
+            style="@style/user_rl">
+            <ImageView
+                android:id="@+id/account_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/account_safety"/>
+            <TextView
+                android:layout_toRightOf="@+id/account_safety"
+                style="@style/user_rl_tv2"
+                android:text="账户安全"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#ffff"
+            android:layout_marginTop="@dimen/distance_15"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_promote"
+            style="@style/user_rl">
+            <ImageView
+                android:id="@+id/tuiguang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/tuiguang"/>
+            <TextView
+                android:layout_toRightOf="@+id/tuiguang"
+                style="@style/user_rl_tv"
+                android:text="推广下线"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_welfare_center"
+            style="@style/user_rl">
+            <ImageView
+                android:id="@+id/fuli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/fuli"/>
+            <TextView
+                android:layout_toRightOf="@+id/fuli"
+                style="@style/user_rl_tv"
+                android:text="福利中心"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_more_function"
+            style="@style/user_rl">
+            <ImageView
+                android:id="@+id/gengduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/gengduo"/>
+            <TextView
+                android:layout_toRightOf="@+id/gengduo"
+                style="@style/user_rl_tv2"
+                android:text="更多功能"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_15"
+        android:layout_marginBottom="@dimen/distance_55"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_set"
+            style="@style/user_rl">
+            <ImageView
+                android:id="@+id/shezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shezhi"/>
+            <TextView
+                android:layout_toRightOf="@+id/shezhi"
+                style="@style/user_rl_tv2"
+                android:text="设置"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

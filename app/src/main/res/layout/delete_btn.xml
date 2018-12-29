@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="@dimen/distance_100"
+        android:layout_height="@dimen/distance_100">
+    <LinearLayout
+        android:layout_width="@dimen/distance_75"
+        android:id="@+id/mLlDelete"
+        android:background="@drawable/et_background13"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:gravity="center"
+        android:layout_height="@dimen/distance_100"
+        tools:ignore="RtlHardcoded,UselessParent">
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="@dimen/distance_15"
+            android:layout_height="@dimen/distance_17"
+            android:background="@mipmap/delete"/>
+    </LinearLayout>
+
+    </LinearLayout>

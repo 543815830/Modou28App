@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/StatusBarColor"
+    tools:context=".usercenter.activiy.LoginActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_85"
+    android:layout_marginTop="@dimen/distance_60"
+    android:padding="@dimen/distance_0"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/distance_30">
+    <ImageView
+        android:id="@+id/roundImageView"
+        android:layout_width="@dimen/distance_85"
+        android:layout_height="@dimen/distance_85"
+        android:src="@drawable/iv_user"
+        tools:ignore="ContentDescription" />
+</LinearLayout>
+<RelativeLayout
+    android:padding="@dimen/distance_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/distance_25"
+    android:layout_marginRight="@dimen/distance_25"
+    android:background="@drawable/et_background">
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:layout_marginLeft="@dimen/distance_20"
+        android:background="@null"
+        android:textSize="@dimen/text_size_5"
+        android:textColor="#454545"
+        android:hint="@string/account"
+        tools:ignore="RtlHardcoded,TextFields" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll_pwd"
+        android:padding="@dimen/distance_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/et_background2">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:layout_marginLeft="@dimen/distance_20"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ll_eye"
+            android:background="@null"
+            android:textSize="@dimen/text_size_5"
+            android:textColor="#c3c3c3"
+            android:hint="@string/password"
+            tools:ignore="RtlHardcoded" />
+        <LinearLayout
+            android:id="@+id/ll_eye"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/distance_12_5"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/distance_45">
+            <ImageView
+                android:id="@+id/iv_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/denglu_bi"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_verficationcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:orientation="horizontal"
+        android:background="@drawable/et_background2">
+        <EditText
+            android:id="@+id/rg_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_45"
+            android:layout_marginLeft="@dimen/distance_20"
+            android:layout_marginRight="@dimen/distance_1"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/rg_get_code"
+            android:textSize="@dimen/text_size_5"
+            android:textColor="#c3c3c3"
+            android:hint="@string/verification_code"
+            tools:ignore="RtlHardcoded,TextFields" />
+        <TextView
+            android:id="@+id/rg_get_code"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/distance_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/StatusFColor"
+            android:text="@string/get_code"
+            android:textSize="@dimen/text_size_5"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+    </RelativeLayout>
+
+
+
+<Button
+    android:id="@+id/login"
+    android:layout_marginTop="@dimen/distance_15"
+    android:layout_marginBottom="@dimen/distance_25"
+    android:layout_marginLeft="@dimen/distance_25"
+    android:layout_marginRight="@dimen/distance_25"
+    android:background="@drawable/login_btn_background"
+    android:textSize="@dimen/text_size_6"
+    android:textColor="@color/tv_fp_color"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_45"
+    android:text="@string/login"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:gravity="center_vertical"
+       >
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/distance_10"
+            android:text="@string/register"
+            android:textColor="@color/login_tab_color"
+            android:textSize="@dimen/text_size_5"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_toRightOf="@+id/register"
+            android:id="@+id/ver_line"
+            android:layout_width="@dimen/distance_1"
+            android:layout_height="@dimen/distance_15"
+            android:layout_centerVertical="true"
+            android:background="@color/login_tab_color"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ver_line"
+            android:layout_marginLeft="@dimen/distance_10"
+            android:text="@string/forget_password"
+            android:textColor="@color/login_tab_color"
+            android:textSize="@dimen/text_size_5"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/verified_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/verified_login"
+            android:textColor="@color/login_tab_color"
+            android:textSize="@dimen/text_size_5"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:layout_marginTop="@dimen/distance_90"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <View
+            android:layout_width="@dimen/distance_90"
+            android:layout_height="@dimen/distance_1"
+            android:background="@color/login_fast_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_login_color"
+            android:textSize="@dimen/text_size_1"
+            android:layout_marginLeft="@dimen/distance_10"
+            android:layout_marginRight="@dimen/distance_10"
+            android:text="@string/quick_login"/>
+        <View
+            android:layout_width="@dimen/distance_90"
+            android:layout_height="@dimen/distance_1"
+            android:background="@color/login_fast_color"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/wechat_login"
+        android:layout_width="@dimen/distance_50"
+        android:layout_height="@dimen/distance_50"
+        android:layout_marginRight="@dimen/distance_50"
+        android:src="@drawable/wechat_login"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+    <ImageView
+        android:id="@+id/qq_login"
+        android:layout_width="@dimen/distance_50"
+        android:layout_height="@dimen/distance_50"
+        android:src="@drawable/qq_login"
+        tools:ignore="ContentDescription" />
+</LinearLayout>
+           <TextView
+               android:id="@+id/cancel_login"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/distance_25"
+               android:textSize="@dimen/distance_15"
+               android:textColor="@color/cancel_login_color"
+               android:text="@string/cancel_login"
+               tools:ignore="SpUsage" />
+</LinearLayout>

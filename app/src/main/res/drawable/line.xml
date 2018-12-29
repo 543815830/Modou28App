@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list   xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="line" >
+            <stroke
+                android:dashGap="@dimen/distance_3"
+                android:dashWidth="@dimen/distance_5"
+                android:width="@dimen/distance_1"
+                android:color="#e9362f" />
+            <size android:height="@dimen/distance_1" />
+        </shape>
+    </item>
+</layer-list>

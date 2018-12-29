@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:id="@+id/ll_mode_pop"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_head_view"
+            android:layout_width="match_parent"
+            android:background="@color/StatusFColor"
+            android:gravity="center"
+            android:layout_height="@dimen/distance_40">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_3"
+                android:drawableRight="@drawable/add2"
+                android:text="添加模式"/>
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/my_mode_lv"
+            android:scrollbars="none"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

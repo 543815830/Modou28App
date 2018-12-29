@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context=".usercenter.activiy.SmsVersionActivity">
+    <include layout="@layout/title_bar"/>
+   <TextView
+       style="@style/tv_pwdcard_notice"
+       android:lineSpacingExtra="@dimen/distance_9"
+       android:layout_marginTop="@dimen/distance_25"
+       android:layout_marginBottom="@dimen/distance_25"
+       android:layout_marginLeft="@dimen/distance_15"
+       android:layout_marginRight="@dimen/distance_15"
+       android:text="        *开启本功能之后，登录只允许短信快捷登录，而不能使用账号密码登录。"
+       tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/distance_15"
+        android:paddingBottom="@dimen/distance_15"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/text_size_5"
+            android:textColor="#c3c3c3"
+            android:layout_marginLeft="@dimen/distance_25"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_is_open"
+            tools:ignore="RtlHardcoded" />
+        <RadioGroup
+            android:id="@+id/rg_isopen"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_open"
+            android:textSize="@dimen/text_size_5"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/rb_card_drawable_selector"
+            android:drawablePadding="@dimen/distance_3"
+            android:textColor="#454545"
+            android:layout_marginLeft="@dimen/distance_15"
+            android:layout_marginRight="@dimen/distance_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_start"
+            android:layout_marginEnd="@dimen/distance_25"
+            tools:ignore="RtlHardcoded" />
+        <RadioButton
+            android:id="@+id/rb_close"
+            android:textSize="@dimen/text_size_5"
+            android:button="@null"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/distance_3"
+            android:drawableLeft="@drawable/rb_card_drawable_selector"
+            android:textColor="#454545"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_close"
+            tools:ignore="RtlHardcoded" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/commit"
+        android:layout_margin="@dimen/distance_25"
+        android:background="@drawable/login_btn_background"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/tv_fp_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:text="@string/string_commit"/>
+
+</LinearLayout>

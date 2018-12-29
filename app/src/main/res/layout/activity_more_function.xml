@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.ruixin.administrator.ruixinapplication.usercenter.activiy.MoreFunctionActivity">
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_card"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_card_use"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_conversion"
+            style="@style/user_rl_info">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="兑换记录"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_trustee"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_agency_pass"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_red_bag"
+            style="@style/user_rl_info">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_inside_redbag"
+                tools:ignore="TooManyViews" />
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_inside_mailbox"
+            style="@style/user_rl_info2">
+            <LinearLayout
+                style="@style/user_rl_li">
+                <TextView
+                    android:id="@+id/tv_mail_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/text_size_5"
+                    android:text="@string/string_inside_mailbox"
+                    tools:ignore="TooManyViews" />
+                <TextView
+                    android:id="@+id/tv_mail_boxnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_12_5"
+                    tools:ignore="TooManyViews" />
+            </LinearLayout>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_domain_name"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="专属域名"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

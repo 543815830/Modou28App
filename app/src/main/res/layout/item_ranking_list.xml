@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_80"
+    android:id="@+id/ll_rank_list"
+    android:padding="@dimen/distance_0"
+    android:gravity="center"
+    android:orientation="horizontal">
+<LinearLayout
+    style="@style/item_ll_rank_style">
+    <TextView
+        android:id="@+id/item_rank"
+        style="@style/item_ranking_list_style"
+        />
+</LinearLayout>
+    <LinearLayout
+        style="@style/item_ll_rank_style">
+    <TextView
+        android:id="@+id/item_game_player"
+
+        style="@style/item_ranking_list_style"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/item_ll_rank_style">
+    <TextView
+        android:id="@+id/item_gold_coin"
+        style="@style/item_ranking_list_style"/>
+    </LinearLayout>
+
+</LinearLayout>

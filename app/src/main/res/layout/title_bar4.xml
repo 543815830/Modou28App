@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_update_photo"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_48"
+    android:background="@color/StatusFColor"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/back_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/distance_48"
+        android:layout_height="match_parent"
+        tools:ignore="RtlHardcoded">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/distance_18"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/distance_18"
+            android:src="@drawable/arrow"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="奖品详情"
+        android:textSize="@dimen/text_size_8"
+        android:textColor="@color/tv_fp_color"
+        tools:ignore="RtlHardcoded" />
+    <LinearLayout
+        android:id="@+id/share"
+       android:layout_toLeftOf="@+id/select_more"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/distance_18"
+        android:layout_width="@dimen/distance_18"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        tools:ignore="RtlHardcoded">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/distance_18"
+            android:src="@drawable/share"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/select_more"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/distance_40"
+        android:layout_height="match_parent"
+        tools:ignore="RtlHardcoded">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/distance_18"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/distance_18"
+            android:src="@drawable/more"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </LinearLayout>
+
+</RelativeLayout>

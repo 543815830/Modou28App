@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gamecenter.webview.GameHelpActivity">
+    <include layout="@layout/title_bar"/>
+   <!-- <TextView
+        style="@style/help_tv1"
+        android:text="游戏规则"/>
+    <TextView
+        style="@style/help_tv2"
+        android:text="xingyun 28shiyizhon中间打极地哦啊是的结合城市那时候ISOis代理收is和都是圣诞节欧力四季豆和爱喝酒劳动能力垃圾深V囖is家都is地是京东方是澳康达泼洒"/>
+    <TextView
+       style="@style/help_tv1"
+        android:text="什么是返奖率，如何计算返奖率？"/>
+    <TextView
+        style="@style/help_tv2"
+        android:text="xingyun 28shiyizhon中间打极地哦啊是的结合城市那时候ISOis代理收is和都是圣诞节欧力四季豆和爱喝酒劳动能力垃圾深V囖is家都is地是京东方是澳康达泼洒"/>
+    <TextView
+        style="@style/help_tv1"
+        android:text="幸运28是根据什么开奖的？"/>
+    <TextView
+        style="@style/help_tv2"
+        android:text="xingyun 28shiyizhon中间打极地哦啊是的结合城市那时候ISOis代理收is和都是圣诞节欧力四季豆和爱喝酒劳动能力垃圾深V囖is家都is地是京东方是澳康达泼洒"/>-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/distance_3" />
+    <WebView
+        android:id="@+id/game_help_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </WebView>
+</LinearLayout>

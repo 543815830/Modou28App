@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 点击 -->
+    <item android:state_checked="true">
+        <layer-list >
+            <item android:left="@dimen/distance_30" android:right="@dimen/distance_30" >
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/distance_1" android:color="#ffffff"/>
+                </shape>
+            </item>
+            <item android:bottom="@dimen/distance_1" >
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/tab_light_color"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- 默认 -->
+    <item >
+        <shape >
+            <solid android:color="@color/tab_light_color"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_50">
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_guanghuan"
+                android:layout_width="@dimen/distance_58"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/touxiang"
+                    android:layout_width="@dimen/distance_32_5"
+                    android:layout_height="@dimen/distance_32_5"
+                    android:src="@drawable/touxiang" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_getuser_name"
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="2"
+            android:textColor="#e9362f"
+            android:textSize="@dimen/text_size_3"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="用户01"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_getuser_points"
+                android:layout_width="wrap_content"
+                android:textColor="#e9362f"
+                android:textSize="@dimen/text_size_3"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/distance_12"
+                android:text="1,520"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/coins"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

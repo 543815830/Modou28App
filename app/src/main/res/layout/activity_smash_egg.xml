@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#860001"
+    tools:context=".usercenter.activiy.SmashEggActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_150"
+        android:background="@drawable/egg_bg">
+        <LinearLayout
+            android:id="@+id/back_arrow"
+            android:layout_width="@dimen/distance_48"
+            android:layout_height="@dimen/distance_48">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/distance_18"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/distance_18"
+                android:src="@drawable/arrow"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#860001">
+        <TextView
+            android:id="@+id/eggjf"
+            android:layout_marginTop="@dimen/distance_25"
+            android:layout_marginBottom="@dimen/distance_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_1"
+            android:text="@string/_500"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/egg_ry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+

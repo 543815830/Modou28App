@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <include layout="@layout/rank_title_bar"/>
+    <View
+    android:background="#b5b5b5"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_1"/>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+
+        android:id="@+id/fd_ranking_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="#ffffff"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent"   >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

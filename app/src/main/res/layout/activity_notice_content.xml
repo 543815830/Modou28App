@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".usercenter.activiy.ForgetPasswordActivity">
+    <include layout="@layout/title_bar"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/distance_3" />
+
+    <io.rmiri.skeleton.SkeletonGroup
+        android:id="@+id/skeletonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        Skeleton:SK_BackgroundViewsColor="#f0f0f0"
+        Skeleton:SK_animationAutoStart="true"
+        Skeleton:SK_animationDirection="LTR"
+        Skeleton:SK_animationDuration="1000"
+        Skeleton:SK_animationFinishType="gradient"
+        Skeleton:SK_animationNormalType="gradient"
+        Skeleton:SK_backgroundMainColor="@android:color/transparent"
+        Skeleton:SK_highLightColor="#DEDEDE">
+        <LinearLayout
+            android:id="@+id/ll_skeleton"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/distance_32_5"
+            android:layout_marginRight="@dimen/distance_32_5"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_20_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_1"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+          <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_17_5"
+                android:layout_width="@dimen/distance_128"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+            <TextView
+                android:background="#f0f0f0"
+                android:layout_width="@dimen/distance_128"
+                android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+
+          <io.rmiri.skeleton.SkeletonView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/distance_30_5"
+                android:layout_marginLeft="@dimen/distance_45"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+            <TextView
+                android:background="#f0f0f0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+            <TextView
+                android:background="#f0f0f0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+            <TextView
+                android:background="#f0f0f0"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_85"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_85" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_30_5"
+                android:layout_marginLeft="@dimen/distance_45"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+            <io.rmiri.skeleton.SkeletonView
+                android:layout_marginTop="@dimen/distance_12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_20"
+                Skeleton:SK_cornerRadius="@dimen/distance_0"
+                Skeleton:SK_padding="@dimen/distance_0"
+                Skeleton:SK_shapeType="rect">
+                <TextView
+                    android:background="#f0f0f0"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_20" />
+            </io.rmiri.skeleton.SkeletonView>
+        </LinearLayout>
+
+    </io.rmiri.skeleton.SkeletonGroup>
+    <WebView
+        android:id="@+id/notice_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+</LinearLayout>

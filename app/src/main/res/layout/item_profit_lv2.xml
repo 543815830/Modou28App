@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_profit_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/distance_40">
+        <TextView
+            android:id="@+id/tv_pgame_name"
+            style="@style/profit_tv1"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_5"
+            android:text="游戏名称" />
+    </LinearLayout>
+</LinearLayout>

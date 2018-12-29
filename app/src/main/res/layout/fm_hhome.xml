@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_to_refresh_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <RadioGroup
+    android:id="@+id/rg_fm_home"
+    android:padding="@dimen/distance_5"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_95"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <RadioButton
+        android:background="@android:color/transparent"
+        android:drawableTop="@mipmap/mianli1"
+        android:text="@string/_ping"
+        style="@style/li_style"/>
+    <RadioButton
+        android:background="@android:color/transparent"
+        android:text="@string/_fuwu"
+        android:drawableTop="@mipmap/mianli2"
+        style="@style/li_style"/>
+    <RadioButton
+        android:background="@android:color/transparent"
+        android:text="@string/_jian"
+        android:drawableTop="@mipmap/mianli3"
+        style="@style/li_style"/>
+    <RadioButton
+        android:background="@android:color/transparent"
+        android:text="@string/_prize"
+        android:drawableTop="@mipmap/mianli4"
+        style="@style/li_style"/>
+
+</RadioGroup>
+    <!-- 活动专场-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#ffffff"
+           android:layout_marginTop="@dimen/distance_5"
+           android:layout_marginBottom="@dimen/distance_5"
+           android:orientation="vertical">
+
+               <TextView
+                   android:layout_marginLeft="@dimen/distance_15"
+                   android:paddingLeft="@dimen/distance_10"
+                   android:background="@drawable/et_background11"
+                   style="@style/hhome_tv_style"
+                   android:text="@string/_act_spe"
+                   tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/ry_h_home"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           </android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+
+
+
+    <!-- 游戏试玩-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/distance_15"
+                android:paddingLeft="@dimen/distance_10"
+                android:background="@drawable/et_background11"
+                style="@style/hhome_tv_style"
+                android:text="@string/_game_test"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ry_h_home_ade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- 最新公告-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/distance_5"
+        android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="@dimen/distance_15"
+                android:paddingLeft="@dimen/distance_10"
+                android:background="@drawable/et_background11"
+                style="@style/hhome_tv_style"
+                android:text="@string/_board_new"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ry_h_home_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+          <!-- 热门奖品-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+
+        android:layout_marginTop="@dimen/distance_5"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/distance_15"
+                android:paddingLeft="@dimen/distance_10"
+                android:background="@drawable/et_background11"
+                style="@style/hhome_tv_style"
+                android:text="@string/_hot_prize"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ry_h_home_hotprize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+    <!-- 合作伙伴-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/distance_5"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/distance_15"
+                android:paddingLeft="@dimen/distance_10"
+                android:background="@drawable/et_background11"
+                style="@style/hhome_tv_style"
+                android:text="@string/_partener"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ry_h_home_partner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>

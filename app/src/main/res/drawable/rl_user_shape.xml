@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:top="@dimen/distance_2"
+            android:right="@dimen/distance_2"
+            android:left="@dimen/distance_2">
+            <shape>
+                <solid android:color="@android:color/transparent"/>
+                <stroke
+                    android:width="@dimen/distance_0_5"
+                    android:color="#B5B5B5"/>
+            </shape>
+        </item>
+
+    </layer-list>

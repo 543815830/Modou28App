@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_pop_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_45">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_marginLeft="@dimen/distance_15"
+            android:id="@+id/pop_tv_pwd_que"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_5"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+</LinearLayout>

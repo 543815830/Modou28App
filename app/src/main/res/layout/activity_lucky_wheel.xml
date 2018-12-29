@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_lucky"
+    android:orientation="vertical"
+    tools:context="com.ruixin.administrator.ruixinapplication.exchangemall.activity.LuckyWheelActivity">
+
+    <include layout="@layout/title_bar"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@mipmap/xingyunzhuanpan_bg"
+        android:paddingBottom="@dimen/distance_20"
+        android:layout_height="wrap_content">
+        <com.ruixin.administrator.ruixinapplication.exchangemall.activity.LotteryView
+            android:id="@+id/lotteryview"
+            android:layout_margin="@dimen/distance_16"
+            android:padding="@dimen/distance_4"
+            app:self_width_size_factor="0.82"
+            app:outer_small_circle_color_default="#94ceff"
+            app:outer_small_circle_color_active="#ffd318"
+            app:inner_round_card_color_default="#5bb4ff"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/ll_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+
+            android:id="@+id/ll_introduce"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/distance_41"
+            android:layout_marginRight="@dimen/distance_41"
+            android:paddingTop="@dimen/distance_15"
+            android:layout_marginBottom="@dimen/distance_35"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/shuoming"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginTop="@dimen/distance_24"
+                android:layout_marginLeft="@dimen/distance_17"
+                android:textColor="#ffff"
+                android:gravity="center_horizontal"
+                android:text="1、没充值200元可获得一次抽奖机会"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginLeft="@dimen/distance_17"
+                android:textColor="#ffff"
+                android:gravity="center_horizontal"
+                android:text="2、可抽取价值200-1688金币"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_5"
+                android:textColor="#ffff"
+                android:layout_marginLeft="@dimen/distance_17"
+                android:gravity="center_horizontal"
+                android:text="3、抽取到的金币直接打入用户账户中"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_5"
+                android:layout_marginTop="@dimen/distance_24"
+                android:layout_marginLeft="@dimen/distance_17"
+                android:textColor="#ffff"
+                android:gravity="center_horizontal"
+                android:text="活动时间：2018.08.09-2018.09.03"/>
+            <TextView
+                android:id="@+id/tv_cjcs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_5"
+                android:textColor="#ffff"
+                android:layout_marginLeft="@dimen/distance_17"
+                android:gravity="center_horizontal"
+                android:text="您剩余的抽奖次数：0次"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

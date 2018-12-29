@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:meta-dataandroid="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ruixin.administrator.ruixinapplication">
+
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 录音的权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".RuiXinApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!-- 友盟统计配置Appkey与Channel -->
+        <!-- value的值填写你在友盟后台申请的应用Appkey -->
+        <!--
+        <meta-data android:value="5b48655ab27b0a26cd00009a" android:name="UMENG_APPKEY"/>
+        &lt;!&ndash;value的值填写渠道名称，例如yingyongbao。这里设置动态渠道变量&ndash;&gt;
+        <meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>
+        -->
+        <activity
+            android:name=".usercenter.activiy.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".usercenter.activiy.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.PhotoMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.ClipPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+            <!-- android:theme="@style/LaunchStyle"> -->
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".usercenter.activiy.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.webview.NoticeContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.webview.EventContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.webview.PayWebview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.webview.AqWebview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.webview.QueryPwdcardWebview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.NPwdActivity"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101502050" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.channelst.headimgclip.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".usercenter.activiy.UserStateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.UpdateInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.UseCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.InsideBagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.OnlinePayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.PromoteOfflineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.PromoteEarningsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.InsideBankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.GetSalaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.FirstRebateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.GetReliefActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.LossRebateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.SignDeskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.InsideMailBoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.SmsContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.SmashEggActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.SetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.MailVersionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.SetPwdCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.SmsVersionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.QqVersionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.DomainNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.OpenDomainNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LaucherActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".gamecenter.activity.MyBetDeatilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gamecenter.webview.GameHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gamecenter.activity.MyBetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".gamecenter.activity.BetModeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".gamecenter.activity.AutoBetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".gamecenter.activity.CheckNumberBetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".gamecenter.activity.GameNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".gamecenter.activity.ProfitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gamecenter.webview.GameMapWebview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.TrusteeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.TrusteeDetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".usercenter.activiy.TrusteeDetActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".usercenter.activiy.TrusteeDetActivity3"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".exchangemall.activity.ProductDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="120.78.87.50"
+                    android:path="/Prize"
+                    android:scheme="iegame" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".exchangemall.activity.ConversionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".exchangemall.activity.ConversionSucessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".exchangemall.webview.CashNoticeWeb"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106940185" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity
+            android:name=".usercenter.activiy.ConversionRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.AdvanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notice.NoticeCotentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".usercenter.activiy.RedbagActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="etest.ruixinyunke.com"
+                    android:path="/RedPack"
+                    android:scheme="iegame" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".usercenter.activiy.PhoneVersionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".exchangemall.activity.LuckyWheelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.webview.BannerWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.MyRedBagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.RedbagDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.AccountSafetyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.PromoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.WelfareCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.MoreFunctionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usercenter.activiy.SetActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".usercenter.activiy.CommitScanLoginActivity" />
+        <activity android:name=".gamecenter.activity.BetContentActivity" />
+        <activity android:name=".gamecenter.activity.DoublingBetActivity" />
+        <activity android:name=".usercenter.activiy.GoldDepositActivity" />
+        <activity android:name=".usercenter.activiy.DepositSucessActivity" />
+        <activity android:name=".usercenter.activiy.DepositRecordActivity" />
+        <activity android:name=".usercenter.activiy.MyBindbankActivity" />
+        <activity android:name=".usercenter.activiy.UpdateMybankActivity"></activity>
+    </application>
+
+</manifest>

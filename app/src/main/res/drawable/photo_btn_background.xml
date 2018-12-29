@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 圆角 -->
+    <corners
+        android:radius="@dimen/distance_5"
+        />
+    <solid
+        android:color="#ffffff"/>
+
+    <!-- 描边 -->
+    <stroke
+        android:width="@dimen/distance_0_5"
+        android:color="@color/login_btn_color"
+        />
+</shape>

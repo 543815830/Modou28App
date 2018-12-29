@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_60"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/count_down"
+        android:layout_width="@dimen/distance_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/et_background18"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/be_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_5"
+            android:text="距离78期截止还有"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/count_down_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="@dimen/distance_3"
+            android:gravity="center"
+            android:text=":"
+            android:textColor="@color/StatusFColor"
+            android:textSize="@dimen/text_size_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lottery"
+        android:layout_width="@dimen/distance_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/be_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_5"
+            android:text="206期开奖结果"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_3" />
+
+        <LinearLayout
+            android:id="@+id/ll_head_result"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lottery_result_tv1"
+                style="@style/result_tv1"
+                android:text="8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/lottery_result_tv2"
+                style="@style/result_tv1"
+                android:text="8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/lottery_result_tv3"
+                style="@style/result_tv1"
+                android:text="8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/lottery_result_tv4"
+                style="@style/result_tv1"
+                android:text="8" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_head_result1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_result1"
+                style="@style/result_tv1"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/tv_result12"
+                style="@style/result_tv1"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/tv_result13"
+                style="@style/result_tv1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_result14"
+                style="@style/result_tv1"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_head_result7"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_result71"
+                style="@style/result_tv1"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/tv_result72"
+                style="@style/result_tv1"
+                android:text="" />
+
+
+            <TextView
+                android:id="@+id/tv_result73"
+                style="@style/result_tv1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_result74"
+                style="@style/result_tv1"
+                android:text="" />
+            <TextView
+                android:id="@+id/tv_result75"
+                style="@style/result_tv1"
+                android:text="" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_result2"
+            android:visibility="gone"
+            style="@style/result_tv1"
+            android:text="" />
+        <TextView
+            android:id="@+id/tv_result3"
+            android:visibility="gone"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/StatusFColor"
+            android:text="" />
+        <LinearLayout
+            android:id="@+id/ll_head_result4"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_result4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#959595"
+                android:textSize="@dimen/text_size_3"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_result41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background20"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_3"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_result42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#339ef9"
+                android:textSize="@dimen/text_size_3"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_head_result5"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_result5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#959595"
+                android:textSize="@dimen/text_size_3"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_result51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/et_background20"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_3"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_head_result6"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="@dimen/distance_15"
+                android:layout_height="@dimen/distance_15" />
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="@dimen/distance_15"
+                android:layout_height="@dimen/distance_15"/>
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="@dimen/distance_15"
+                android:layout_height="@dimen/distance_15"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

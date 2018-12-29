@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_30"
+            android:gravity="center"
+            android:background="#fff4de">
+            <TextView
+                style="@style/game_center_tv2"
+                android:text="奖品" />
+
+            <TextView
+                style="@style/game_center_tv2"
+                android:text="数量" />
+
+            <TextView
+                style="@style/game_center_tv2"
+                android:text="时间" />
+
+            <TextView
+                style="@style/game_center_tv2"
+                android:text="状态" />
+
+            <TextView
+                style="@style/game_center_tv2"
+                android:text="操作" />
+        </LinearLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/conversion_record_lv"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            ptr:ptrMode="both">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.ruixin.administrator.ruixinapplication.usercenter.activiy.AccountSafetyActivity">
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_advance_reward"
+            style="@style/user_rl_info">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="闯关奖励"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_sign_desk"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_sign_center"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_loss_rebate"
+            style="@style/user_rl_info">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_loss_rebate"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_first_rebate"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_first_rebate"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_marginTop="@dimen/distance_10"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_get_salary"
+            style="@style/user_rl_info">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_get_salary"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_get_relief"
+            style="@style/user_rl_info2">
+            <TextView
+                style="@style/user_rl_li"
+                android:text="@string/string_get_relief"/>
+            <ImageView
+                style="@style/user_li_arrow"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

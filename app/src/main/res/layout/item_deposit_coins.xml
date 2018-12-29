@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_pa_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_coins"
+            android:layout_marginBottom="@dimen/distance_5"
+            android:layout_width="@dimen/distance_100"
+            android:layout_height="@dimen/distance_30"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+            <TextView
+                android:id="@+id/tv_coins"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/ll_selector2"
+                android:textColor="@drawable/tvc_selector"
+                android:textSize="@dimen/text_size_5"
+                android:text="50"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

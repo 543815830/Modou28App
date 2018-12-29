@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent"
+    tools:context=".usercenter.activiy.InsideMailBoxActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/title_bar"/>
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_5"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/distance_15"
+            android:textColor="#ffffff"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:text="@string/string_multiple_check"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_inside_mailbox"
+        android:background="#f2f2f2"
+        android:divider="#f2f2f2"
+        android:scrollbars="none"
+        android:dividerHeight="0dip"
+        android:layout_marginTop="@dimen/distance_15"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrMode="both">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

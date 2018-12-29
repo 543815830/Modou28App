@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_center_bar"
+    android:layout_height="@dimen/distance_75"
+    android:background="#f2f2f2"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/distance_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout style="@style/game_center_ll">
+
+            <TextView
+                android:id="@+id/tv_chane_coins"
+                style="@style/game_center_tv"
+                android:text="我的余额" />
+
+            <TextView
+                android:id="@+id/tv_my_coins"
+                style="@style/game_center_tv1"
+                android:text="123456" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/distance_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout style="@style/game_center_ll">
+
+            <TextView
+                style="@style/game_center_tv"
+                android:text="今日参与" />
+
+            <TextView
+                android:id="@+id/today_part"
+                style="@style/game_center_tv1"
+                android:text="89期" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/distance_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout style="@style/game_center_ll">
+
+            <TextView
+                style="@style/game_center_tv"
+                android:text="今日盈亏" />
+
+            <TextView
+                android:id="@+id/today_win_loss"
+                style="@style/game_center_tv1"
+                android:text="123456" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/distance_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout style="@style/game_center_ll">
+
+            <TextView
+                style="@style/game_center_tv"
+                android:text="今日胜率" />
+
+            <TextView
+                android:id="@+id/today_win_rate"
+                style="@style/game_center_tv1"
+                android:text="95%" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

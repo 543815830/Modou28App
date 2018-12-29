@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_30"
+        android:background="#fff4de"
+        android:gravity="center">
+
+        <TextView
+            style="@style/game_center_tv3"
+            android:text="数字" />
+
+        <TextView
+            android:id="@+id/tv_peiv"
+            style="@style/game_center_tv3"
+            android:text="标赔" />
+
+        <TextView
+            style="@style/game_center_tv3"
+            android:text="金额" />
+
+        <TextView
+            android:id="@+id/tv_hasbet"
+            style="@style/game_center_tv3"
+            android:text="已投" />
+
+        <TextView
+            style="@style/game_center_tv3"
+            android:text="倍数" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/game_number_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"></ListView>
+
+</LinearLayout>

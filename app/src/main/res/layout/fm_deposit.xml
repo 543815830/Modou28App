@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_deposit_coin"
+        android:paddingLeft="@dimen/distance_20"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:layout_marginTop="@dimen/distance_25"
+        android:layout_marginBottom="@dimen/distance_13"
+        android:layout_height="@dimen/distance_45"
+        android:background="@drawable/et_background5"
+        android:hint="@string/_deposit_number"
+        android:textSize="@dimen/text_size_5"
+        android:textColor="#c3c3c3"
+        tools:ignore="RtlHardcoded,RtlSymmetry,TextFields" />
+    <TextView
+        android:id="@+id/tv_user_secques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_45"
+        android:textColor="@color/StatusFColor"
+        android:textSize="@dimen/text_size_1"
+        android:text="@string/_user_secques"
+        tools:ignore="RtlHardcoded" />
+    <EditText
+        android:id="@+id/et_user_secans"
+        android:paddingLeft="@dimen/distance_20"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:layout_marginTop="@dimen/distance_17"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:layout_height="@dimen/distance_45"
+        android:background="@drawable/et_background5"
+        android:hint="@string/_user_secans"
+        android:textSize="@dimen/text_size_5"
+        android:textColor="#c3c3c3"
+        tools:ignore="RtlHardcoded,RtlSymmetry,TextFields" />
+    <Button
+        android:id="@+id/commit"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/login_btn_background"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/tv_fp_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:text="@string/_commit_deposit"/>
+
+</LinearLayout>

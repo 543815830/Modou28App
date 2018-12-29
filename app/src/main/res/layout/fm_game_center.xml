@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_game_center1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/StatusFColor"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_game_center"
+                    android:background="@color/StatusFColor"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_48"
+                    android:text="游戏中心"
+                    android:textSize="@dimen/text_size_8"
+                    android:textColor="@color/tv_fp_color"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/unlogin_logo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:textColor="#919191"
+                    android:textSize="@dimen/text_size_3"
+                    android:text="登录后即可查看游戏中心哦～"/>
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_btn_background"
+                    android:layout_marginTop="@dimen/distance_15"
+                    android:layout_width="@dimen/distance_100"
+                    android:layout_height="@dimen/distance_35"
+                    android:textSize="@dimen/text_size_6"
+                    android:text="登录"
+                    android:textColor="#ffffffff"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll_game_center"
+            android:orientation="vertical">
+            <include layout="@layout/title_bar2" />
+            <include layout="@layout/count_down_bar" />
+            <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+                android:id="@+id/pull_to_refresh_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <include layout="@layout/center_bar" />
+                    <FrameLayout
+                        android:id="@+id/fl_game_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/distance_30"
+                                android:gravity="center"
+                                android:background="#fff4de">
+
+                                <TextView
+                                    style="@style/game_center_tv2"
+                                    android:text="期号" />
+
+                                <TextView
+                                    style="@style/game_center_tv2"
+                                    android:text="截止" />
+
+                                <TextView
+                                    style="@style/game_center_tv2"
+                                    android:text="开奖" />
+
+                                <TextView
+                                    style="@style/game_center_tv2"
+                                    android:text="投注/中奖" />
+
+                                <TextView
+                                    style="@style/game_center_tv2"
+                                    android:text="投注" />
+                            </LinearLayout>
+
+                            <ListView
+                                android:id="@+id/game_center_lv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+                            </ListView>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+

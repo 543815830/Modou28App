@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/distance_45">
+
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#454545"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_1"
+                android:text="模式"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_bet_points"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#454545"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_5"
+                android:text="5000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_win_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#454545"
+                android:gravity="center"
+                android:drawableRight="@drawable/down_arrow"
+                android:drawablePadding="@dimen/distance_3"
+                android:textSize="@dimen/text_size_2"
+                android:text="我的模式"/>
+            <TextView
+                android:id="@+id/tv_win_mode_id"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/distance_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_loss_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#454545"
+                android:gravity="center"
+                android:drawableRight="@drawable/down_arrow"
+                android:drawablePadding="@dimen/distance_3"
+                android:textSize="@dimen/text_size_2"
+                android:text="我的模式"/>
+            <TextView
+                android:id="@+id/tv_loss_mode_id"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

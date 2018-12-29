@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:background="@drawable/item_selector"
+        android:layout_height="@dimen/distance_45">
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:textColor="#696969"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/distance_18"
+        android:textSize="@dimen/text_size_5"
+        android:text="全部奖品"/>
+        <ImageView
+            android:id="@+id/iv_check"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/distance_18"
+            android:src="@drawable/duigou"/>
+    </RelativeLayout>
+</LinearLayout>

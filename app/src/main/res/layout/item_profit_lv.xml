@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_profit_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:id="@+id/hs_item"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_40"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/distance_40"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_1"
+                    style="@style/profit_tv1"
+                    android:textColor="#eb1515"
+                    android:textSize="@dimen/text_size_5"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    style="@style/profit_tv1"
+                    android:textColor="#69c319"
+                    android:textSize="@dimen/text_size_5"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    style="@style/profit_tv1"
+                    android:textColor="#69c319"
+                    android:textSize="@dimen/text_size_5"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_4"
+                    style="@style/profit_tv1"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    style="@style/profit_tv1"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    style="@style/profit_tv1"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_7"
+                    style="@style/profit_tv1"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_8"
+                    style="@style/profit_tv1"
+                    android:text="5000" />
+
+                <TextView
+                    android:id="@+id/tv_sum"
+                    style="@style/profit_tv1"
+                    android:text="5000" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:id="@+id/tv_profit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distance_40"
+            android:textColor="#eb1515"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_5"
+            android:text="0" />
+    </LinearLayout>
+</LinearLayout>

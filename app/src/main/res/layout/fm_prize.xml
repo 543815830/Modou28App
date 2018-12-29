@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f3f2f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/rg_prize"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/distance_45"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/rb_prize1"
+            style="@style/rb_prize"
+            android:text="热门奖品" />
+        <RadioButton
+            android:id="@+id/rb_prize2"
+            style="@style/rb_prize"
+            android:paddingRight="@dimen/distance_20"
+            android:drawableRight="@drawable/rb__prize_drawable_selector"
+            android:text="奖品分类" />
+        <RadioButton
+            android:id="@+id/rb_prize3"
+            style="@style/rb_prize"
+            android:text="最新奖品" />
+    </RadioGroup>
+<android.support.v4.view.ViewPager
+    android:id="@+id/prize_vp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</android.support.v4.view.ViewPager>
+
+</LinearLayout>

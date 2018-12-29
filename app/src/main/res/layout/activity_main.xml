@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruixin.administrator.ruixinapplication.MainActivity">
+    <!--FrameLayout-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/v_line"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+<View
+    android:id="@+id/v_line"
+    android:layout_above="@+id/rg_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/distance_0_5"
+    android:background="@color/login_user_color"/>
+    <!--底部的RedioGroup-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/home_page"
+            android:drawableTop="@drawable/rb_home_page_drawable_selector"
+            android:text="@string/home_page"
+            style="@style/bottom_style"/>
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/ranking_list"
+            android:text="@string/ranking_list"
+            android:drawableTop="@drawable/rb__ranking_list_drawable_selector"
+            style="@style/bottom_style"/>
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/game_center"
+            android:text="@string/game_center"
+            android:drawableTop="@drawable/rb_game_center_drawable_selector"
+            style="@style/bottom_style"/>
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/notice"
+            android:text="@string/notice"
+            android:drawableTop="@drawable/rb_notice_drawable_selector"
+            style="@style/bottom_style"/>
+
+        <RadioButton
+            android:background="@android:color/transparent"
+            android:id="@+id/user_center"
+            android:text="@string/user_center"
+            android:drawableTop="@drawable/rb_user_center_drawable_selector"
+            style="@style/bottom_style"/>
+    </RadioGroup>
+    <LinearLayout
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="@dimen/distance_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="@dimen/distance_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="@dimen/distance_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_msg"
+            android:layout_width="@dimen/distance_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_my"
+            android:layout_width="@dimen/distance_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mLlCheck"
+    android:layout_width="@dimen/distance_32"
+    android:layout_height="@dimen/distance_66">
+    <LinearLayout
+        android:layout_width="@dimen/distance_25"
+        android:layout_marginLeft="@dimen/distance_7"
+        android:gravity="center"
+        android:layout_height="@dimen/distance_66"
+        tools:ignore="RtlHardcoded,UselessParent">
+    <CheckBox
+        android:id="@+id/cb_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mailbox_selector"
+        android:button="@null"/>
+    </LinearLayout>
+</LinearLayout>

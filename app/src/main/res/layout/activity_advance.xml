@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_advance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ruixin.administrator.ruixinapplication.usercenter.activiy.AdvanceActivity">
+    <include layout="@layout/title_bar"
+        android:id="@+id/in_title"
+        android:layout_alignParentTop="true"
+        tools:ignore="IncludeLayoutParam" />
+    <LinearLayout
+        android:id="@+id/ll_advance"
+        android:layout_below="@+id/in_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f3f3"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/et_background7"
+            android:layout_marginTop="@dimen/distance_5"
+            android:layout_marginBottom="@dimen/distance_10"
+            android:layout_marginLeft="@dimen/distance_13"
+            android:layout_marginRight="@dimen/distance_13"
+            android:layout_height="@dimen/distance_40">
+            <TextView
+                android:id="@+id/record_type"
+                android:layout_width="match_parent"
+                android:text="全部游戏"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/distance_5"
+                android:layout_marginRight="@dimen/distance_5"
+                android:textColor="#ffffff"
+                android:drawableRight="@drawable/msdown"
+                android:textSize="@dimen/text_size_5"
+                android:layout_height="match_parent"
+                />
+        </RelativeLayout>
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_advance"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_marginBottom="@dimen/distance_50"
+            android:divider="@null"
+            android:layout_height="match_parent">
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/commit"
+        android:layout_width="@dimen/distance_125"
+        android:layout_height="@dimen/distance_43"
+        android:background="@drawable/button_selector5"
+        android:textSize="@dimen/text_size_8"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/tv_fp_color"
+        android:text="确认领取"
+        />
+
+</RelativeLayout>

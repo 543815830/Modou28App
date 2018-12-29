@@ -1,0 +1,333 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">RuiXinApplication</string>
+    <string name="encode_qrcode">生成二维码</string>
+    <string name="dencode_qrcode">扫描二维码</string>
+    <string name="code_text">请输入生成二维码的文本信息</string>
+    <string name="qrcodetext">这里显示扫描结果</string>
+    <string name="account">请输入账号</string>
+    <string name="accountName_empty">账号为空</string>
+    <string name="password">请输入密码</string>
+    <string name="password_empty">密码为空</string>
+    <string name="login">登录</string>
+    <string name="register">注册账号</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="verified_login">验证手机登录</string>
+    <string name="quick_login">快捷登录</string>
+    <string name="cancel_login">取消登录</string>
+    <drawable name="clr_normal">#ffffff</drawable>
+    <drawable name="clr_pressed">#c3c3c3</drawable>
+
+    <string name="phone_number">请输入手机号</string>
+    <string name="verification_code">请输入验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="next">下一步</string>
+
+    <string name="free_register">免费注册</string>
+    <string name="rg_nickname">请输入昵称</string>
+    <string name="rg_password">请输入密码</string>
+    <string name="rg_pwd_again">再次确认密码</string>
+    <string name="rg_register">注册</string>
+    <string name="update_pwd">确认修改</string>
+    <string name="rg_login">直接登录</string>
+    <string name="rg_back">返回首页</string>
+    <string name="tag"><![CDATA[<font color="#339ef9">【新】</font>]]></string>
+
+    <string name="home_page">首页</string>
+    <string name="ranking_list">排行榜</string>
+    <string name="game_center">游戏中心</string>
+    <string name="notice">消息通知</string>
+    <string name="user_center">个人中心</string>
+
+    <string name="date_rank">今日排行</string>
+    <string name="week_rank">本周排行</string>
+    <string name="month_rank">本月排行</string>
+    <string name="game_player">玩家</string>
+    <string name="ranking">名次</string>
+    <string name="gold_coin">金币</string>
+    <string name="_50"><![CDATA[余额<50]]></string>
+    <string name="_150"><![CDATA[余额<150]]></string>
+    <string name="_200"><![CDATA[余额<200]]></string>
+    <string name="_250"><![CDATA[余额<250]]></string>
+    <string name="_300"><![CDATA[余额<300]]></string>
+    <string name="_400"><![CDATA[余额<400]]></string>
+    <string name="login_awarze">登录奖励</string>
+    <string name="string_time">时间</string>
+    <string name="string_experise">经验</string>
+    <string name="string_coins">金额</string>
+    <string name="string_balance">余额</string>
+    <string name="string_unlogin">登录</string>
+    <string name="string_log_out">退出登录</string>
+    <string name="string_get_relief">救济领取</string>
+    <string name="string_get_salary">工资领取</string>
+    <string name="string_first_rebate">首充返利</string>
+    <string name="string_loss_rebate">亏损返利</string>
+    <string name="string_welfare_center">福利中心</string>
+    <string name="string_inside_mailbox">站内信箱</string>
+    <string name="string_inside_redbag">站内红包</string>
+    <string name="string_agency_pass">托管方案</string>
+    <string name="string_domain_name">专属域名</string>
+    <string name="string_promote_earnings">推广收益</string>
+    <string name="string_promote_offline">推广下线</string>
+    <string name="string_inside_function">站内功能</string>
+    <string name="string_online_payment">在线充值</string>
+    <string name="string_card_use">点卡使用</string>
+    <string name="string_update_pwd">密码修改</string>
+    <string name="string_bind_qq">QQ绑定</string>
+    <string name="string_version_qq">QQ验证</string>
+    <string name="string_version_sms">短信验证</string>
+    <string name="string_version_mail">邮箱验证</string>
+    <string name="string_set_pwdcard">密保卡设置</string>
+    <string name="string_set_pwd">密保设置</string>
+    <string name="string_update_user_info">资料修改</string>
+    <string name="string_user_info">用户信息</string>
+    <string name="string_inside_bank">站内银行</string>
+    <string name="string_smash_egg">积分砸蛋</string>
+    <string name="string_bind_phone">手机绑定</string>
+    <string name="string_my_exp">我的经验</string>
+    <string name="string_exp">/经验</string>
+    <string name="string_my_total">我的积分</string>
+    <string name="string_total">/积分</string>
+    <string name="string_bank_coin">银行金币</string>
+    <string name="string_coin">/金币</string>
+    <string name="string_account_balance">账号余额</string>
+    <string name="string_symbol_coin">￥</string>
+    <string name="string_user_state">账号动态</string>
+    <string name="string_id">ID：</string>
+    <string name="string_save">保存</string>
+    <string name="string_auto_clipe">自定义裁剪</string>
+    <string name="string_back">返回</string>
+    <string name="string_domain_notice">*开通专属域名，系统将为您专门搭建一台服务器供您访问，在公用线路受到攻击的时候，您的专属域名则不受影响。</string>
+    <string name="string_un_open">您尚未开通专属域名</string>
+    <string name="string_open">立即开通</string>
+    <string name="string_open_record">开通记录</string>
+    <string name="string_canget_fanli">可领取的返利</string>
+    <string name="string_yes_first_rebate">昨日首充：</string>
+    <string name="string_commit_get">确定领取</string>
+    <string name="_28_28_1_000">魔豆28首充返利盛大来袭，所有会员在魔豆28每日首充，即可获得首次充值金额的1.000%返利</string>
+    <string name="string_fir_notice">每日首充返利在第二天领取，逾期无法领取</string>
+    <string name="_0_1">每日首充是指每日0点后的第1笔充值</string>
+    <string name="string_relief_notice"> 注：各等级每天可领取次数和领取条件如下表，账户余额均包括虚拟银行存款。</string>
+    <string name="string_level">等级</string>
+    <string name="string_canget_relief">可领救济</string>
+    <string name="string_condition">领取条件</string>
+    <string name="string_num_onday">次数/天</string>
+    <string name="lv0">LV0</string>
+    <string name="lv1">LV1</string>
+    <string name="lv2">LV2</string>
+    <string name="lv3">LV3</string>
+    <string name="lv4">LV4</string>
+    <string name="lv5">LV5</string>
+    <string name="lv6">LV6</string>
+    <string name="string_current_salary">当前工资</string>
+    <string name="string_send_redbag">发红包</string>
+    <string name="string_deduct_money">总扣费</string>
+    <string name="_0">0</string>
+    <string name="string_xiane">每日限额</string>
+    <string name="string_fei">手续费</string>
+    <string name="string_ge">个</string>
+    <string name="string_shu">红包数</string>
+    <string name="string_yuan">元</string>
+    <string name="_0_00">0.00</string>
+    <string name="string_bag_account">红包总金额</string>
+    <string name="string_your_balance">您的账户余额</string>
+    <string name="string_your_deposit">您的银行存款</string>
+    <string name="_deposit">存入</string>
+    <string name="string_take_out">取出</string>
+    <string name="string_multiple_check">多选</string>
+    <string name="string_offline_loss_rebate">下线亏损返利</string>
+    <string name="string_total_coins">下线亏损总和（金币）</string>
+    <string name="string_loss_fanli">可领取的返利（金币）</string>
+    <string name="string_day_loss_fanli">日亏损返利</string>
+    <string name="string_canget_fanlicoin">可领取返利（金币）</string>
+    <string name="string_mail_input">请输入邮箱</string>
+    <string name="string_detail_notice">详情公告</string>
+    <string name="string_alipay">支付宝</string>
+    <string name="string_wechat">微信</string>
+    <string name="string_agency">代理充值</string>
+    <string name="string_domain_input">请输入域名,不能以数字开头</string>
+    <string name="string_select_region">选择地区</string>
+    <string name="string_south_server">华南服务器</string>
+    <string name="string_east_server">华东服务器</string>
+    <string name="string_north_server">华北服务器</string>
+    <string name="_65ms">65ms</string>
+    <string name="_148ms">148ms</string>
+    <string name="_85163ms">85163ms</string>
+    <string name="string_open_time">开通时长</string>
+    <string name="string_use_coins">消耗金币</string>
+    <string name="string_my_offline">我的下线</string>
+    <string name="string_only_qq">只允许使用QQ登录</string>
+    <string name="string_jump_qq">通过qq登录时跳过其他安全工具</string>
+    <string name="string_commit">确认</string>
+    <string name="string_select_que">请选择密保问题</string>
+    <string name="string_set_answer">请设置密保答案</string>
+    <string name="string_safe_set">密保卡安全设置</string>
+    <string name="_1">1.密保卡只显示一次，请生成密保卡之后马上截图保存。</string>
+    <string name="_2">2.绑定后您每次登录时都需要输入密保卡对应的值。</string>
+    <string name="_3">若不在需要密保卡，可解绑密保卡。</string>
+    <string name="_4">如未保存或丢失请联系客服。</string>
+    <string name="string_bind_card">绑定密保卡</string>
+    <string name="string_query_card">查看密保卡</string>
+    <string name="string_unbind_card">解绑密保卡</string>
+    <string name="string_sign_center">签到中心</string>
+    <string name="string_sign_record">签到记录</string>
+    <string name="_500">温馨提示：砸金蛋每次消耗500积分</string>
+    <string name="string_is_open">是否开启：</string>
+    <string name="string_start">开启</string>
+    <string name="string_close">关闭</string>
+    <string name="string_take_photo">拍照</string>
+    <string name="string_choose_photo">从相册选择</string>
+    <string name="string_up_head">修改头像</string>
+    <string name="string_id_hao">ID号</string>
+    <string name="string_nickname">昵称</string>
+    <string name="string_nickname_input">请输入昵称</string>
+    <string name="string_kefu">需要修改联系客服</string>
+    <string name="string_qq">QQ</string>
+    <string name="string_qq_input">请输入qq</string>
+    <string name="string_do_not">设置后不可更改</string>
+    <string name="string_alipay_input">请输入支付宝</string>
+    <string name="_sex">性别</string>
+    <string name="_f">女</string>
+    <string name="_birthday">生日</string>
+    <string name="_1991_10_2" tools:ignore="TypographyDashes">1991–10-2</string>
+    <string name="_old_pwd">原登录密码：</string>
+    <string name="_old_pwd_input">请输入原登录密码</string>
+    <string name="_new_pwd">新登录密码：</string>
+    <string name="_new_pwd_input">请输入新设置的登录密码</string>
+    <string name="_commit_pwd">确认新密码：</string>
+    <string name="_commit_pwd_input">请确认新登录密码</string>
+    <string name="_pwd_que">你的职业是什么？</string>
+    <string name="pwd_answer_input">请输入密保答案</string>
+    <string name="_version_phone">验证手机：</string>
+    <string name="_versioncode_input">请输入验证码</string>
+    <string name="_forget_pwd">忘记原密码</string>
+    <string name="_commom_pay">普通充值</string>
+    <string name="_max_pay">批量充值</string>
+    <string name="_user_state">账号动态</string>
+    <string name="_loading">正在加载中...</string>
+    <string name="_version_pwd_card">密保卡验证</string>
+    <string name="a2">A2</string>
+    <string name="_pwd_card_input">请输入对应的密保卡</string>
+    <string name="_cancel">取消</string>
+    <string name="_10_50000">注：单笔限额最低10元，最高50000元</string>
+    <string name="_coins_input">请输入金额</string>
+    <string name="_commit_payment">确认充值</string>
+    <string name="_card_account">请输入卡号</string>
+    <string name="_card_password">请输入卡密</string>
+    <string name="_caozuo">操作类型：</string>
+    <string name="_use_card">使用点卡</string>
+    <string name="_query_card">查询点卡</string>
+    <string name="_commit_sub">确认提交</string>
+    <string name="_deposit_number">请输入存入数量</string>
+    <string name="_user_secques">密保问题：你父亲的名字是什么？</string>
+    <string name="_user_secans">请输入密保答案</string>
+    <string name="_commit_deposit">确定存入</string>
+    <string name="_fetch_number">请输入取出数量</string>
+    <string name="_commit_fetch">确定取出</string>
+    <string name="_ping">平台安全稳定</string>
+    <string name="_fuwu">服务高效优质</string>
+    <string name="_jian">简单方便快捷</string>
+    <string name="_prize">活动礼品丰富</string>
+    <string name="_act_spe">活动专场</string>
+    <string name="_game_test">游戏试玩</string>
+    <string name="_board_new">最新公告</string>
+    <string name="_hot_prize">热门奖品</string>
+    <string name="_partener">合作伙伴</string>
+    <string name="vip">注：批量充值不支持红包卡和VIP卡</string>
+    <string name="_input_type">卡号和卡密以一个空格隔开,每行一组</string>
+    <string name="_copy">复制我的推广地址</string>
+    <string name="_offline_level">下线升级</string>
+    <string name="_awarze">获得奖励（金币）</string>
+    <string name="_zhu">注：推荐好友加入，当他升级时，您将获得奖励</string>
+    <string name="_0_03">下线手动投注，上线获得0.03%奖励</string>
+    <string name="_5">下线使用广告体验卡，上线获得0%奖励</string>
+    <string name="_6">下线亏损，上线第二天亏损返利领取2%奖励</string>
+    <string name="_last_month">上一月</string>
+    <string name="_next_month">下一月</string>
+    <string name="_guize">奖励规则</string>
+    <string name="_7">连续签到天数超过七天安七天计算</string>
+    <string name="_level">等级</string>
+    <string name="_sign_awarze">签到奖励</string>
+    <string name="_8">你亏损趣玩给你返利</string>
+    <string name="_website">官网</string>
+    <string name="_gift_bag">礼包</string>
+    <string name="_offline_id">下线ID：</string>
+    <string name="_2016_10_10">注册时间：2016/10/10</string>
+    <string name="_2016_10">最后登录：2016/10/10</string>
+    <string name="_type">类型：</string>
+    <string name="_get_awarze">获得奖励:</string>
+    <string name="level">下线等级：</string>
+    <string name="_event">事件：</string>
+    <string name="_event_log">每日签到</string>
+    <string name="_9">+50</string>
+    <string name="_scan_code">扫一扫登录</string>
+    <string name="_no_data" tools:ignore="TypographyEllipsis">暂无发布内容～</string>
+    <string-array name="arrUsernames">
+        <item>阿妹</item>
+        <item>阿郎</item>
+        <item>陈奕迅</item>
+        <item>周杰伦</item>
+        <item>曾一鸣</item>
+        <item>成龙</item>
+        <item>王力宏</item>
+        <item>汪峰</item>
+        <item>王菲</item>
+        <item>那英</item>
+        <item>张伟</item>
+        <item>张学友</item>
+        <item>李德华</item>
+        <item>郑源</item>
+        <item>白水水</item>
+        <item>白天不亮</item>
+        <item>陈龙</item>
+        <item>陈丽丽</item>
+        <item>哈林</item>
+        <item>高进</item>
+        <item>高雷</item>
+        <item>阮今天</item>
+        <item>龚琳娜</item>
+        <item>苏醒</item>
+        <item>苏永康</item>
+        <item>陶喆</item>
+        <item>沙宝亮</item>
+        <item>宋冬野</item>
+        <item>宋伟</item>
+        <item>袁成杰</item>
+        <item>戚薇</item>
+        <item>齐大友</item>
+        <item>齐天大圣</item>
+        <item>品冠</item>
+        <item>吴克群</item>
+        <item>BOBO</item>
+        <item>马元初</item>
+        <item>Jobs</item>
+        <item>动力火车</item>
+        <item>马元朝</item>
+        <item>伍佰</item>
+        <item>#蔡依林</item>
+        <item>$797835344$</item>
+        <item>Jack</item>
+        <item>~夏先生</item>
+    </string-array>
+    <string-array name="jifeng_array_info">
+        <item name="huawei_mobile">华为荣耀5C</item>
+        <item name="xiaomi_shouhuan">小米运动手环</item>
+        <item name="qq_sport">QQ运动5积分</item>
+        <item name="qq_sport">1000金币</item>
+        <item name="gopro_camera">gopro相机</item>
+        <item name="center_info">立即抽奖</item> <!-- don't modified the text length, draw text need four text length -->
+        <item name="gopro_camera2">gopro相机</item>
+        <item name="misfit_flash2">misfit手环</item>
+        <item name="qq_sport">QQ运动5积分</item>
+        <item name="qq_gongzai2">QQ公仔</item>
+        <item name="huawei_mobile">华为荣耀5C</item>
+        <item name="misfit_flash3">misfit手环</item>
+        <item name="misfit_flash">谢谢参与</item>
+
+    </string-array>
+
+    <string name="choujiang">抽奖</string>
+    <string name="choujiang_desc">"抽奖需消耗抽奖次数，确定抽奖吗?"</string>
+    <string name="result_title">恭喜您</string>
+    <string name="result_message">恭喜您获得%s~</string>
+</resources>
+

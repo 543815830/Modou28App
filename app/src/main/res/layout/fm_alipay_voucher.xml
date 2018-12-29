@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/StatusFColor"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_17_5"
+            android:layout_marginLeft="@dimen/distance_25"
+            android:layout_marginTop="@dimen/distance_25"
+            android:text="@string/_10_50000"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_1"
+            tools:ignore="RtlHardcoded" />
+
+
+        <EditText
+            android:id="@+id/coins"
+            android:padding="@dimen/distance_5"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/distance_25"
+            android:layout_marginRight="@dimen/distance_25"
+            android:layout_marginBottom="@dimen/distance_25"
+            android:layout_height="@dimen/distance_45"
+            android:background="@drawable/et_background5"
+            android:hint="@string/_coins_input"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_5"
+            android:textColor="#c3c3c3"
+            tools:ignore="TextFields" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/commit"
+        android:layout_marginTop="@dimen/distance_25"
+        android:layout_marginBottom="@dimen/distance_25"
+        android:layout_marginLeft="@dimen/distance_25"
+        android:layout_marginRight="@dimen/distance_25"
+        android:background="@drawable/login_btn_background"
+        android:textSize="@dimen/text_size_6"
+        android:textColor="@color/tv_fp_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_45"
+        android:text="@string/_commit_payment"/>
+
+</LinearLayout>

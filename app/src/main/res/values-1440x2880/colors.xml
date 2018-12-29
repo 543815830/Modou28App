@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <color name="StatusBarColor">#f2f2f2</color>
+    <color name="StatusredColor">#ff0000</color>
+    <color name="StatusFColor">#339ef9</color>
+    <color name="login_user_color">#b5b5b5</color>
+    <color name="login_btn_color">#339ef9</color>
+    <color name="login_tab_color">#454545</color>
+    <color name="login_fast_color">#b5b5b5</color>
+    <color name="tv_login_color">#959595</color>
+    <color name="cancel_login_color">#339ef9</color>
+    <color name="tv_fp_color">#ffffff</color>
+    <color name="clip_pic_color">#000000</color>
+
+    <color name="home_page_color">#e0e0e0</color>
+    <color name="tab_light_color">#339ef9</color>
+    <color name="btn_color">#d1d1d1</color>
+    <color name="outer_circle_bg_color">#0967ff</color>
+    <color name="inner_circle_bg_color">#0038ff</color>
+    <color name="inner_card_text_color">#ffffff</color>
+    <color name="inner_card_bg_color">#5bb4ff</color>
+    <color name="center_card_bg_color">#ffd318</color>
+
+    <color name="small_circle_color_blue">#94ceff</color>
+    <color name="small_circle_color_yellow">#ffd318</color>
+    <color name="start_color">#339ef9</color>
+    <color name="end_color">#50c3f8</color>
+</resources>

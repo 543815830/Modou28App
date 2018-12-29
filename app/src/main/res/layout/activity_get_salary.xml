@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    tools:context=".usercenter.activiy.GetSalaryActivity">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/current_salary"
+            android:layout_marginTop="@dimen/distance_60"
+            android:layout_marginBottom="@dimen/distance_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/StatusFColor"
+            android:textSize="@dimen/text_size_30" />
+        <TextView
+            android:layout_marginBottom="@dimen/distance_46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#454545"
+            android:textSize="@dimen/text_size_5"
+            android:text="@string/string_current_salary"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/commit"
+        android:layout_gravity="center"
+        android:background="@drawable/login_btn_background"
+        android:textSize="@dimen/text_size_6"
+        android:layout_marginBottom="@dimen/distance_37"
+        android:textColor="@color/tv_fp_color"
+        android:layout_width="@dimen/distance_175"
+        android:layout_height="@dimen/distance_45"
+        android:text="@string/string_commit_get"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:layout_marginBottom="@dimen/distance_9"
+        android:lineSpacingExtra="@dimen/distance_9"
+        android:textColor="@color/StatusFColor"
+        android:text="        注：魔豆28全新推出新的工资系统，让您领取工资，享受畅快游戏体验，具体使用方式如下："
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <TextView
+        android:id="@+id/gongzi_lilv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:lineSpacingExtra="@dimen/distance_9"
+        android:layout_marginBottom="@dimen/distance_9"
+        android:textColor="@color/StatusFColor"
+        android:text="            可领取的工资额为您投注额的10000分之一！"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <TextView
+        android:id="@+id/is_jiru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:lineSpacingExtra="@dimen/distance_9"
+        android:layout_marginBottom="@dimen/distance_9"
+        android:textColor="@color/StatusFColor"
+        android:text="            自动投注不计入工资；"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_1"
+        android:layout_marginLeft="@dimen/distance_15"
+        android:lineSpacingExtra="@dimen/distance_9"
+        android:layout_marginBottom="@dimen/distance_9"
+        android:textColor="@color/StatusFColor"
+        android:text="            每日工资领取不限额；"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</LinearLayout>

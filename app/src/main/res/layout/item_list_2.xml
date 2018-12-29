@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/hot_games"
+        style="@style/game_tab"
+        android:text="热门游戏"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hot_geme_name"
+        android:layout_marginLeft="@dimen/distance_12_5"
+        android:layout_marginRight="@dimen/distance_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
